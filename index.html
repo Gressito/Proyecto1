@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tienda de Ropa</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="producto">
+            <h2>Camisa</h2>
+            <p>Precio: $25</p>
+            <button onclick="agregarAlCarrito('Camisa', 25)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h2>Pantalón</h2>
+            <p>Precio: $40</p>
+            <button onclick="agregarAlCarrito('Pantalón', 40)">Agregar al carrito</button>
+        </div>
+    </main>
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito">
+            <!-- Aquí se mostrarán los productos del carrito -->
+        </ul>
+        <p>Total: $<span id="total-carrito">0</span></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Ropa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
